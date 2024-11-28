@@ -1,0 +1,362 @@
+/* Breakpoints Document *********************************************************************************************************************/
+
+/* ?Desktops (up to 1200px) *************************************************************************************/
+@media only screen and (max-width: 1200px) {
+  /* Header */
+  header {
+    padding: 20px 30px;
+  }
+
+  /* Nav */
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 0.9em;
+  }
+
+  /* Hero Section */
+  .hero-text {
+    font-size: 1.8em;
+    top: 30%;
+  }
+
+  /* Intro Section */
+  .intro {
+    padding: 50px 20px;
+  }
+
+  .quote {
+    font-size: 0.73em;
+    margin: 0;
+  }
+
+  .intro-text {
+    margin: 0 0 0 40px;
+    text-align: justify;
+  }
+
+  /* Corals Section */
+  .model {
+    height: 75vh;
+  }
+
+  .images-wrapper {
+    width: 60vw;
+  }
+}
+
+/* ?Laptops (up to 1024px) ***************************************************************************************/
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  /* Header */
+  header {
+    padding: 15px 20px; /* Reduce padding further */
+  }
+
+  .disclaimer {
+    font-size: 0.5em;
+  }
+
+  /* Nav */
+  nav ul {
+    justify-content: space-around; /* Spread navigation items */
+    padding: 0;
+  }
+
+  nav a {
+    font-size: 0.8em;
+    padding: 0px 10px;
+  }
+
+  /* Hero */
+  .hero-image {
+    height: 70vh;
+    background-size: cover;
+  }
+
+  /* Model Images */
+  .flipside-model {
+    margin: 0 0 0 40px;
+  }
+
+  /* 3D Model */
+  .flipside-content {
+    margin: 0 0 0 20px;
+  }
+}
+
+/* ?Tablets (up to 768px) ***************************************************************************************/
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 0.85em; /* Scale down text size */
+  }
+
+  /* Header */
+  header {
+    flex-direction: column; /* Stack header elements */
+    align-items: center;
+    padding: 10px; /* Reduce padding */
+  }
+
+  .disclaimer {
+    text-align: center;
+    font-size: 0.6em;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    align-items: center;
+  }
+
+  .mobile-nav ul li a {
+    font-size: 0.75em;
+    padding: 0px 10px;
+  }
+
+  /* Hero Section */
+  .hero-image {
+    height: 60vh;
+    background-size: cover;
+  }
+
+  .hero-text {
+    font-size: 1.5em;
+  }
+
+  /* Intro Section */
+  .intro {
+    padding: 30px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quote {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .intro-h1 {
+    font-size: 2.2em;
+  }
+
+  .quote-text {
+    padding-right: 35px;
+  }
+
+  .intro-text {
+    width: 90%;
+    margin: 0;
+  }
+
+  /* Corals Section */
+  .content-wrapper {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .model-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flipside-model-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .model {
+    margin: 0;
+    width: 90vw;
+    height: 40vh;
+    margin-bottom: 20px;
+  }
+
+  .information {
+    width: 92%;
+    font-size: 0.85em;
+    margin-left: 30px;
+  }
+
+  .images-wrapper {
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+  }
+
+  .image {
+    width: 28%;
+    margin: 0;
+  }
+
+  /* 3D Model */
+  .flipside-content {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  /* Popup Section */
+  .popup-content img {
+    max-width: 80vw;
+    max-height: 70vh;
+  }
+
+  .close-popup {
+    font-size: 1.8em;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.7em;
+    padding: 10px 0;
+  }
+
+  footer .disclaimer {
+    font-size: 1em;
+    padding: 0;
+  }
+
+  footer p {
+    padding: 0;
+  }
+}
+
+/* ?Mobile Devices (up to 480px) ********************************************************************************/
+@media only screen and (max-width: 480px) {
+  /* Header */
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .disclaimer {
+    margin: 0;
+    text-align: left;
+    padding-right: 30px;
+  }
+
+  /* Nav */
+  .hamburger-menu {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* Hero Section */
+  .hero-image {
+    height: 40vh;
+  }
+
+  .hero-text {
+    font-size: 1.1em;
+    top: 25%;
+  }
+
+  /* Corals Section */
+  .content-wrapper {
+    padding: 8px;
+  }
+
+  .model {
+    width: 86%;
+    height: 35vh;
+  }
+
+  .information {
+    width: 95%;
+    font-size: 0.8em;
+  }
+
+  .information p {
+    font-size: 1.5em;
+    padding-right: 35px;
+  }
+
+  .images-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* padding: 10px 0; */
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .image {
+    width: 87%;
+    height: 40vh;
+    flex-shrink: 0;
+    border-radius: 10px;
+  }
+
+  /* Popup Section */
+  .popup-content img {
+    max-width: 87vw;
+    max-height: 50vh;
+  }
+
+  .close-popup {
+    font-size: 1.5em;
+  }
+
+  /* Footer */
+  footer .disclaimer {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.5em;
+  }
+}
+
+/* ?Smaller Devices (up to 319px) ************************************************************************************/
+@media only screen and (max-width: 319px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1,
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  /* Header */
+  .disclaimer {
+    padding-right: 0;
+  }
+
+  /* Nav */
+  .mobile-nav ul li a {
+    font-size: 0.9em;
+  }
+
+  /* Hero */
+  .hero-image {
+    height: 25vh;
+  }
+
+  .hero-text {
+    font-size: 0.9em;
+    width: 54%;
+  }
+
+  /* Intro Section */
+  .intro {
+    padding: 30px 0;
+    margin: 40px 25px;
+  }
+
+  /* Footer */
+  footer .disclaimer {
+    font-size: 0.6em;
+  }
+}

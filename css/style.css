@@ -1,0 +1,394 @@
+/* ?Fonts *******************************************/
+@import url("https://use.typekit.net/vba5zcr.css");
+
+/* ?Structure ***************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body,
+h3,
+p {
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #262626;
+}
+
+h1,
+h2 {
+  font-family: quinn-text, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.8em;
+}
+
+h2 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* Header ************************************/
+header {
+  background: #ebeff2;
+  color: #061f3e;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.disclaimer {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+/* Nav */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav a {
+  color: #03658c;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+nav a:hover {
+  color: #262626;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  font-size: 3em;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000; /* Ensure it’s above other elements */
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #03658c;
+  color: white;
+  box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  padding: 20px;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.mobile-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+/* Main **************************************/
+/* ?Hero Section */
+/* Hero */
+.hero-image {
+  background-image: url(../images/Hero.png);
+  height: 96vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  width: max-content;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #061f3e;
+  line-height: 2;
+}
+
+/* ?Intro Section */
+/* Intro */
+.intro {
+  display: flex;
+  padding: 100px 20px;
+  margin: 40px;
+  border: 1px solid #03658c;
+  border-radius: 20px;
+}
+
+/* Quote */
+.quote {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin: 0 40px 0 20px;
+}
+
+.intro-h1 {
+  color: #03658c;
+}
+
+.quote-text {
+  text-align: right;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1em;
+}
+
+/* Text */
+.intro-text {
+  margin: 0 20px 0 10px;
+  line-height: 2;
+}
+
+/* ?Corals Section */
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+/* 3D Model */
+.model-wrapper {
+  display: flex;
+}
+
+.model {
+  width: 30vw;
+  height: 60vh;
+  border: 1px solid black;
+  margin: 0 40px 0 20px;
+}
+
+.flipside-model {
+  margin: 0 20px;
+}
+
+/* Model Information */
+.information {
+  width: 60vw;
+}
+
+h3,
+p {
+  padding: 10px 0;
+}
+
+h2 {
+  font-size: 3em;
+  color: #03658c;
+}
+
+/* Model Images */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flipside-content {
+  margin: 0 20px;
+}
+
+.images-wrapper {
+  display: flex;
+  width: 70vw;
+  height: 25vh;
+}
+
+.image {
+  width: 20vw;
+  height: auto;
+  margin: 0 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 20px;
+}
+
+.image:hover {
+  cursor: pointer;
+}
+
+.image1 {
+  margin: 0 20px 0 0;
+}
+
+.image3 {
+  margin: 0 0 0 20px;
+}
+
+/* Model 1 */
+.model1-1 {
+  background-image: url(../images/Acropora\ secale-Front.png);
+}
+
+.model1-2 {
+  background-image: url(../images/Acropora\ secale-Side.png);
+}
+
+.model1-3 {
+  background-image: url(../images/Acropora\ secale-Close-up.png);
+}
+
+/* Model 2 */
+.model2-1 {
+  background-image: url(../images/Heliopora\ coerulea-Front.png);
+}
+
+.model2-2 {
+  background-image: url(../images/Heliopora\ coerulea-Side.png);
+}
+
+.model2-3 {
+  background-image: url(../images/Heliopora\ coerulea-Close-up.png);
+}
+
+/* Model 3 */
+.model3-1 {
+  background-image: url(../images/Tridacna\ squamosa-Front.png);
+}
+
+.model3-2 {
+  background-image: url(../images/Tridacna\ squamosa-Side.png);
+}
+
+.model3-3 {
+  background-image: url(../images/Tridacna\ squamosa-Close-up.png);
+}
+
+/* ?Popup Section */
+/* Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  position: relative;
+  background: #ebeff2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2em;
+  color: #ebeff2;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close-popup:hover {
+  transform: scale(1.3);
+  color: #03658c;
+}
+
+.arrow {
+  border: solid #ebeff2;
+  border-width: 0 6px 6px 0; /* Increase thickness of the arrow */
+  display: inline-block;
+  padding: 10px; /* Increase padding for a larger arrow size */
+  top: 50%;
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.arrow-left {
+  left: 50px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.arrow-right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 50px;
+}
+
+.arrow:hover {
+  transform: scale(1.3);
+}
+
+.arrow-left:hover {
+  transform: rotate(135deg) scale(1.3);
+}
+
+.arrow-right:hover {
+  transform: rotate(-45deg) scale(1.3);
+}
+
+/* Footer ************************************/
+footer {
+  font-size: smaller;
+  text-align: center;
+  background: #ebeff2;
+  padding: 20px 0;
+}
+
+footer p {
+  padding: 10px 0 0 0;
+  color: #03658c;
+}
+
+footer .disclaimer {
+  font-size: small;
+  padding-bottom: 10px;
+}
