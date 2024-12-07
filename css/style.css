@@ -188,8 +188,9 @@ nav a:hover {
 .model {
   width: 30vw;
   height: 60vh;
-  border: 1px solid black;
-  margin: 0 40px 0 20px;
+  margin: 0 20px;
+  border: 1px solid #03658c;
+  border-radius: 20px;
 }
 
 .flipside-model {
