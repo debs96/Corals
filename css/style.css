@@ -143,7 +143,7 @@ nav a:hover {
   display: flex;
   padding: 100px 20px;
   margin: 40px;
-  border: 1px solid #03658c;
+  border: 2px solid #03658c;
   border-radius: 20px;
 }
 
@@ -189,8 +189,22 @@ nav a:hover {
   width: 30vw;
   height: 60vh;
   margin: 0 20px;
-  border: 1px solid #03658c;
+  border: 2px solid #03658c;
   border-radius: 20px;
+}
+
+/* Hotspot Button */
+.hotspot {
+  background-color: #03658c;
+  border-radius: 5px;
+  border: 0px solid #03658c;
+  padding: 10px;
+  color: #ebeff2;
+}
+
+.hotspot-model2,
+.hotspot-model3 {
+  width: 15vw;
 }
 
 .flipside-model {

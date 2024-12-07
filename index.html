@@ -98,10 +98,11 @@
             ar
             auto-rotate
             camera-controls
+            shadow-intensity="1"
           >
             <!-- Hotspot #1 -->
             <button
-              class="Hotspot"
+              class="hotspot"
               slot="hotspot-1"
               data-position="0.0008379688711021918m 0.03459707398627661m 0.028748249729193848m"
               data-normal="0.2148358834372234m 0.6429674873012412m 0.7351451240818211m"
@@ -112,7 +113,7 @@
 
             <!-- Hotspot #2 -->
             <button
-              class="Hotspot"
+              class="hotspot"
               slot="hotspot-2"
               data-position="-0.019555169537364997m 0.034456061856764156m -0.004999890577266328m"
               data-normal="0.274104905081979m 0.16996136274607526m 0.9465620086309701m"
@@ -184,14 +185,81 @@
               <div class="model2-3 image image3"></div>
             </div>
           </div>
-          <div class="model flipside-model"></div>
+
+          <!-- 3D Model -->
+          <model-viewer
+            class="model flipside-model"
+            src="./models/Heliopora coerulea.glb"
+            alt="coral_3"
+            ar
+            auto-rotate
+            camera-controls
+            shadow-intensity="1"
+          >
+            <!-- Hotspot #1 -->
+            <button
+              class="hotspot hotspot-model2"
+              slot="hotspot-1"
+              data-position="-0.14653034039278579m 0.01753324744322944m -0.025915298203117554m"
+              data-normal="0.10781188647064051m -0.04671132295788374m -0.9930733353802055m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">
+                The sea slug Doridomorpha gardineri camouflages itself against
+                these flat surfaces
+              </div>
+            </button>
+
+            <!-- AR Function for Mobile -->
+            <button slot="ar-button" id="ar-button">View in your space</button>
+          </model-viewer>
         </div>
       </section>
 
       <!-- Model 3 -->
       <section id="nav3" class="content-wrapper">
         <div class="model-wrapper">
-          <div class="model"></div>
+          <!-- 3D Model -->
+          <model-viewer
+            class="model flipside-model"
+            src="./models/Tridacna squamosa.glb"
+            alt="coral_3"
+            ar
+            auto-rotate
+            camera-controls
+            shadow-intensity="1"
+          >
+            <!-- Hotspot #1 -->
+            <!-- <button
+              class="hotspot hotspot-model3"
+              slot="hotspot-1"
+              data-position="0.021062282349858408m 0.013582312801470708m -0.08407456790108345m"
+              data-normal="0.4703194784144752m 0.8405959314966472m -0.2686969820731524m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">
+                The largest known giant clam can weight up to 230kg (510lbs)
+              </div>
+            </button> -->
+
+            <!-- Hotspot #2 -->
+            <button
+              class="hotspot hotspot-model3"
+              slot="hotspot-2"
+              data-position="0.008166289223360462m -0.07193692049122018m 0.04715353936663247m"
+              data-normal="-0.4060601532331988m -0.09651725332616905m -0.9087351494063622m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">
+                This particular clam is missing its bottom shell connected at
+                this hinge point
+              </div>
+            </button>
+
+            <!-- AR Function for Mobile -->
+            <button slot="ar-button" id="ar-button">View in your space</button>
+          </model-viewer>
+
           <div class="content">
             <div class="information">
               <h2>Guardians of the Reef</h2>
