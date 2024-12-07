@@ -90,6 +90,7 @@
       <!-- Model 1 -->
       <section id="nav1" class="content-wrapper">
         <div class="model-wrapper">
+          <!-- 3D Model -->
           <model-viewer
             class="model"
             src="./models/Acropora secale.glb"
@@ -98,6 +99,7 @@
             auto-rotate
             camera-controls
           >
+            <!-- Hotspot #1 -->
             <button
               class="Hotspot"
               slot="hotspot-1"
@@ -107,33 +109,21 @@
             >
               <div class="HotspotAnnotation">Tubipora musica</div>
             </button>
-          </model-viewer>
 
-          <button
-            class="Hotspot"
-            slot="hotspot-1"
-            data-position="0.0008379688711021918m 0.03459707398627661m 0.028748249729193848m"
-            data-normal="0.2148358834372234m 0.6429674873012412m 0.7351451240818211m"
-            data-visibility-attribute="visible"
-          >
-            <div class="HotspotAnnotation">Tubipora musica</div>
-          </button>
-          <button
-            class="Hotspot"
-            slot="hotspot-2"
-            data-position="-0.019555169537364997m 0.034456061856764156m -0.004999890577266328m"
-            data-normal="0.274104905081979m 0.16996136274607526m 0.9465620086309701m"
-            data-visibility-attribute="visible"
-          >
-            <div class="HotspotAnnotation">Create habitats</div>
-          </button>
-          <div class="progress-bar hide" slot="progress-bar">
-            <div class="update-bar"></div>
-          </div>
-          <button slot="ar-button" id="ar-button">View in your space</button>
-          <div id="ar-prompt">
-            <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
-          </div>
+            <!-- Hotspot #2 -->
+            <button
+              class="Hotspot"
+              slot="hotspot-2"
+              data-position="-0.019555169537364997m 0.034456061856764156m -0.004999890577266328m"
+              data-normal="0.274104905081979m 0.16996136274607526m 0.9465620086309701m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Create habitats</div>
+            </button>
+
+            <!-- AR Function for Mobile -->
+            <button slot="ar-button" id="ar-button">View in your space</button>
+          </model-viewer>
 
           <div class="content">
             <div class="information">
