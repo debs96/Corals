@@ -21,10 +21,10 @@
     <!-- *HEADER START ----------------------------------------------------->
     <header>
       <!-- Disclaimer -->
-      <div class="disclaimer">
+      <p class="disclaimer">
         *This is an experiment in using AI for creating a site. Some content,
         images, audio and code are AI-generated.
-      </div>
+      </p>
 
       <!-- Hamburger Munu -->
       <div class="hamburger-menu" id="hamburger-menu">
@@ -38,6 +38,7 @@
           <li><a href="#nav1">Architects of the Reef</a></li>
           <li><a href="#nav2">The Blue Harvest</a></li>
           <li><a href="#nav3">Guardians of the Reef</a></li>
+          <li class="nav-podcast"><a href="#nav4">Deep Dive Podcast</a></li>
         </ul>
       </nav>
 
@@ -47,6 +48,7 @@
           <li><a href="#nav1">Architects of the Reef</a></li>
           <li><a href="#nav2">The Blue Harvest</a></li>
           <li><a href="#nav3">Guardians of the Reef</a></li>
+          <li class="nav-podcast"><a href="#nav4">Deep Dive Podcast</a></li>
         </ul>
       </nav>
     </header>
@@ -130,7 +132,9 @@
             </button>
 
             <!-- AR Function for Mobile -->
-            <button slot="ar-button" id="ar-button">View in your space</button>
+            <button class="ar-button" slot="ar-button" id="ar-button">
+              View in your space
+            </button>
           </model-viewer>
 
           <div class="content">
@@ -218,7 +222,9 @@
             </button>
 
             <!-- AR Function for Mobile -->
-            <button slot="ar-button" id="ar-button">View in your space</button>
+            <button class="ar-button" slot="ar-button" id="ar-button">
+              View in your space
+            </button>
           </model-viewer>
         </div>
       </section>
@@ -228,7 +234,7 @@
         <div class="model-wrapper">
           <!-- 3D Model -->
           <model-viewer
-            class="model flipside-model"
+            class="model"
             src="./models/Tridacna squamosa.glb"
             alt="coral_3"
             ar
@@ -264,7 +270,9 @@
             </button>
 
             <!-- AR Function for Mobile -->
-            <button slot="ar-button" id="ar-button">View in your space</button>
+            <button class="ar-button" slot="ar-button" id="ar-button">
+              View in your space
+            </button>
           </model-viewer>
 
           <div class="content">
@@ -310,6 +318,41 @@
           <i class="arrow arrow-left"></i>
         </div>
       </div>
+
+      <!-- Podcast Section -->
+      <section id="nav4" class="podcast-section">
+        <div class="podcast-intro">
+          <img
+            class="podcast-image"
+            src="./images/Podacst_CoverPage.png"
+            alt="podcast-cover-page"
+          />
+
+          <div class="podcast-content">
+            <div class="podcast-introText">
+              <h2>Deep Dive into Coral Conversations</h2>
+              <h3>Listen in as we explore the mysteries of coral reefs</h3>
+            </div>
+
+            <div class="podcast-text">
+              Episode 1: Unveiling the wonders of corals: What they are and why
+              they matter
+              <p>
+                In this episode of Deep Dive, we explore the fascinating world
+                of corals. From their unique biological makeup to their crucial
+                role in marine ecosystems, we'll uncover what makes these tiny
+                creatures so important. Join us as we journey through the
+                vibrant, yet fragile, coral reefs and discover how they support
+                ocean life and help regulate our planet's environment.
+              </p>
+              <audio controls>
+                <source src="./audio/Corals.wav" type="audio/wav" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- *MAIN END --------------------------------------------------------->
 

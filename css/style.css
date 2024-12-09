@@ -60,6 +60,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 
 nav a {
@@ -70,6 +71,17 @@ nav a {
 
 nav a:hover {
   color: #262626;
+}
+
+.nav-podcast {
+  background-color: #b75d68;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.nav-podcast a {
+  color: #ebeff2;
+  padding: 0;
 }
 
 /* Hamburger Menu */
@@ -203,13 +215,20 @@ nav a:hover {
   width: 15vw;
 }
 
-.hotspot-model2,
-.hotspot-model3 {
-  width: 15vw;
-}
-
 .flipside-model {
   margin: 0 20px;
+}
+
+.ar-button {
+  width: 20vw;
+  background-color: #b75d68;
+  border: 1.5px solid #b75d68;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  left: 76%;
+  top: 85%;
+  color: #ebeff2;
 }
 
 /* Model Information */
@@ -389,6 +408,37 @@ h2 {
 
 .arrow-right:hover {
   transform: rotate(-45deg) scale(1.3);
+}
+
+/* ?Podcast Section */
+.podcast-intro {
+  border: 2px solid #03658c;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 40px 20px;
+  margin: 20px 40px;
+}
+
+.podcast-image {
+  width: 45%;
+  height: 45%;
+}
+
+.podcast-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.podcast-introText {
+  margin-bottom: 10px;
+}
+
+.podcast-text {
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 /* Footer ************************************/
